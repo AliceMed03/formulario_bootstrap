@@ -24,7 +24,7 @@ function validaQuantidade(){
         mensagem.innerHTML = "Preencha a quantidade do produto!" ;
         $('#alerta').modal('show'); 
         return false;
-    } else{
+    } else{ // verifica se o valor é entre 1 e 1000
         if(quantidade.value > 0 && quantidade.value <=1000){
         quantidade.style.background = "white";
         return true;
